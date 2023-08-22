@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 import MovieCard from "./components/MovieCard";
 import Spinner from "./components/Spinner";
+import { apiKey } from './config';
 
-const apiKey = process.env.REACT_APP_API_KEY;
 const API_URL = `http://www.omdbapi.com/?apikey=${apiKey}`;
 
 function App() {
